@@ -286,3 +286,13 @@ function makeCard( cardNumber, expirationDate, securityCode ) {
 */
 
   //Code Here
+function bindCard(person, card) {
+  var customer = {};
+  for (var prop in person) {
+    customer[prop] = person[prop];
+  }
+  for (var prop in card) {
+    customer[prop] = card[prop];
+  }
+  return customer;
+}

@@ -248,7 +248,14 @@ methodCollection.logHello = function() {
 // parameters and returns a new object with all of the information that you passed in.
 
   //Code Here
-
+function makePerson(name, birthday, ssn) {
+  var obj = {
+      name: name
+    , birthday: birthday
+    , ssn: ssn
+  }
+  return obj;
+}
 
 
 //NEXT PROBLEM
